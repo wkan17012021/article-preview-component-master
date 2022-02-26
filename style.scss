@@ -1,0 +1,28 @@
+/* global styles*/
+$vDkGyBlue: hsl(217, 19%, 35%);
+$desatDkBlue:  hsl(214, 17%, 51%);
+$gyBlue: hsl(212, 23%, 69%);
+$ltGyBlue: hsl(210, 46%, 95%);
+
+html {
+  font-size: 81%; /*  1rem = 13px */
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Manrope', sans-serif;
+  color: $vDkMgnta;
+  line-height: 1.5;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+main {
+    max-width: 90%;
+    margin: 3rem auto 0 auto;
+}
