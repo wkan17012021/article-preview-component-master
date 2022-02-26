@@ -15,7 +15,7 @@ html {
 }
 body {
   font-family: 'Manrope', sans-serif;
-  color: $vDkMgnta;
+  background-color: $ltGyBlue;
   line-height: 1.5;
   padding: 0;
   margin: 0;
@@ -25,4 +25,75 @@ body {
 main {
     max-width: 90%;
     margin: 3rem auto 0 auto;
+    background-color: white;
+    border-radius: 1rem;
+}
+.banner-photo {
+    border-radius: 1rem 1rem 0 0 ;
+    width: 100%;
+    max-width: 400px;
+}
+
+.content {
+    border: 1px solid red;
+    padding: 1rem 2.5rem 1rem 2.5rem;
+}
+.title, ul li:first-child {
+    color: $desatDkBlue;
+    font-weight: 700;
+}
+.title {
+    font-size: 1.25rem;
+}
+
+.blurb, ul li:nth-child(2) {
+    color: $gyBlue;
+    font-weight: 400;
+}
+.profile-section {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    border: 1px solid blue;
+}
+.profile-section > img {
+    border-radius: 50%;
+    width: 4rem;
+    height: auto;
+    
+}
+ul {
+    list-style: none;
+    border: 1px solid black;
+    padding-left: 1rem;
+}
+.share-button {
+    margin-left: auto;
+    margin-right: 0;
+    background-color: $ltGyBlue;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.share-button img {
+    width: 15px;
+    height: 13px;
+}
+
+/* media query for screen size 1440px */
+@media (min-width: 1440px) {
+    main {
+        max-width: 90%;
+        margin: 50% auto 5rem auto;
+        display: flex;
+    }
+    .img-container {
+        
+    }
+    .content {
+        
+    }
 }
