@@ -1,6 +1,7 @@
-const profileSection = document.querySelector('.profile-section');
+const toggleBtn = document.querySelector(".share-icon");
+const shareLinks = document.querySelector(".share-links");
 
-function share() {
-    console.log('click')
-  profileSection.setAttribute("class", "test");
-}
+// set the parent element node of the div containing the hidden social media content, to toggle to active
+toggleBtn.addEventListener("click", function () {
+  shareLinks.parentElement.classList.toggle("active");
+});

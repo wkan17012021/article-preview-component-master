@@ -47,7 +47,7 @@ main {
           transform: scale(1.1);
 }
 
-.content {
+.content, .profile-section {
   padding: 1rem 2.5rem 1rem 2.5rem;
 }
 
@@ -73,6 +73,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 1rem;
+  position: relative;
 }
 
 .profile-section > img {
@@ -102,11 +103,40 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 .share-button img {
   width: 15px;
   height: 13px;
+}
+
+/* hidden social media content shown when button is toggle */
+.share-links {
+  background-color: #48556a;
+  border-radius: 0 0 1rem 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+  z-index: 0;
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  height: 0;
+}
+
+.share-links span {
+  color: #6d7f97;
+  letter-spacing: 0.5rem;
+  margin-right: 1rem;
 }
 
 /* media query for screen size 1440px */
@@ -128,7 +158,9 @@ ul {
   }
 }
 
-.share-active {
-  display: none;
+/* styling for mobile toggle */
+.profile-section.active .share-links {
+  height: 100%;
+  padding: 1rem 1rem 1rem 2.5rem;
 }
 /*# sourceMappingURL=style.css.map */
