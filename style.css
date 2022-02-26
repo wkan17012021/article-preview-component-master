@@ -27,16 +27,16 @@ main {
   margin: 3rem auto 0 auto;
   background-color: white;
   border-radius: 1rem;
+  -webkit-box-shadow: 5px 10px 18px #888888;
+          box-shadow: 5px 10px 18px #888888;
 }
 
 .banner-photo {
   border-radius: 1rem 1rem 0 0;
   width: 100%;
-  max-width: 400px;
 }
 
 .content {
-  border: 1px solid red;
   padding: 1rem 2.5rem 1rem 2.5rem;
 }
 
@@ -62,7 +62,6 @@ main {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 1rem;
-  border: 1px solid blue;
 }
 
 .profile-section > img {
@@ -73,7 +72,6 @@ main {
 
 ul {
   list-style: none;
-  border: 1px solid black;
   padding-left: 1rem;
 }
 
@@ -103,11 +101,19 @@ ul {
 /* media query for screen size 1440px */
 @media (min-width: 1440px) {
   main {
-    max-width: 90%;
-    margin: 50% auto 5rem auto;
+    max-width: 50%;
+    margin: 15% auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .img-container {
+    border-radius: 0;
+  }
+  .banner-photo {
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 1rem 0 0 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
