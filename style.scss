@@ -114,7 +114,7 @@ ul {
 @media (min-width: 1440px) {
     main {
         max-width: 50%;
-        margin: 15% auto;
+        margin: 20% auto;
         display: flex;
     }
     .img-container {
@@ -124,6 +124,31 @@ ul {
         height: 100%;
         aspect-ratio: 1;
         border-radius: 1rem 0 0 1rem;
+    }
+    .profile-section .share-links{
+        width: max-content;
+        padding: 0;
+        left: 22rem;
+        top: -5rem;
+        border-radius: 1rem;
+    }
+    .profile-section.active .share-links {
+        height: auto;
+        display: flex;
+    }
+    .share-links::after {
+        position: absolute;
+        content:"";
+        bottom: -1rem;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 1.5rem;
+        height: 1.5rem;
+        background: $vDkGyBlue;
+        transform: rotate(45deg);
+        z-index: 10;
     }
 }
 
